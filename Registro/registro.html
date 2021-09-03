@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro</title>
-    <link rel="stylesheet" href="./registro.css">
+    <script src="../pulsaciones.js"></script>
+    <link rel="stylesheet" href="./registro.css" />
 </head>
 
 <body>
     <!--Division UL MENU-->
     <ul class="ul side"></ul>
-    <ul class="ul middle" style="background-color: #5F99C2">
+    <ul class="ul middle" style="background-color: #5f99c2">
         <li>
             <a href="../index.html">Inicio </a>
         </li>
@@ -30,50 +31,67 @@
         <div class="column side"></div>
 
         <!--Division middle-->
-        <div class="column middle" style="background-color: #C3E1F7">
+        <div class="column middle" style="background-color: #c3e1f7">
             <h1>REGISTRO DE PULSACIONES</h1>
-            <br/>
-            <div id="registro">
-                <p style="font-weight: bold;">
-                    Si registras tu frecuencia cardíaca, sabrás lo duro que trabaja tu cuerpo y podrás regular la
-                    intensidad de tus entrenamientos fácilmente.
-                    Si buscas una forma sencilla de registrar tus sesiones de training, o una solución que capture tus
-                    datos de entrenamiento de forma increíblemente precisa, tenemos lo que necesitas. Deportistas de
-                    élite de todo el mundo confían en los monitores de frecuencia cardíaca de esta pagina.
-                </p>
-                <br>
+            <br />
+            <form>
+                <div id="registro">
+                    <p >
+                        Si registras tu frecuencia cardíaca, sabrás lo duro que trabaja tu
+                        cuerpo y podrás regular la intensidad de tus entrenamientos
+                        fácilmente. Si buscas una forma sencilla de registrar tus sesiones
+                        de training, o una solución que capture tus datos de entrenamiento
+                        de forma increíblemente precisa, tenemos lo que necesitas.
+                        Deportistas de élite de todo el mundo confían en los monitores de
+                        frecuencia cardíaca de esta pagina.
+                    </p>
+                    <br />
+                    <div>
+                        <label for="identificacion">Identificación</label>
+                        <input type="text" id="identificacion" />
+                    </div>
 
-                <h2>Variación en las pulsaciones</h2>
-                <p>
-                    En un adulto sano, el las pulsaciones en reposo están entre 60 y 80
-                    latidos por minuto. Conforme se va aumentando la edad también
-                    aumenta el pulso a 85 latidos por minuto y se sigue considerando
-                    normal. Las pulsaciones pueden ser medidas a través de un ECG, un
-                    monitor de presión arterial, medidores de pulso y de manera manual.
-                    Las pulsaciones varían por la posición, respiración y otros
-                    factores. Para conocer tu pulso en reposo, debes medirlo después de
-                    despertar y antes de levantarte de la cama. Tu frecuencia cardíaca
-                    está también relacionada con tu condición física. Por ejemplo, la
-                    frecuencia cardíaca de un atleta de alto impacto se encuentra entre
-                    32 y 45 latidos por minuto. Esto sucede porque lo atletas tienen
-                    mayor capacidad pulmonar. Las pulsaciones también varían con la
-                    edad. Si el pulso varía de manera permanente y se aleja de los
-                    rangos según tu edad deberías consultar a tu médico. Una razón puede
-                    ser frecuencia cardíaca elevada​​ o hipertensión.
-                </p>
-                <h2>Medir las pulsaciones</h2>
-                <p>
-                    Medir las pulsaciones es un método importante para obtener
-                    información sobre las funciones vitales de tu cuerpo, tales como
-                    actividad cardíaca, balance de fluidos y flujo sanguíneo. El pulso
-                    puede ser medidas de manera manual o a través de monitores de
-                    medición.
-                </p>
-            </div>
+                    <br />
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" />
+                    </div>
 
+                    <br />
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" />
+                    </div>
 
-            <div class="footer">
-            </div>
+                    <br />
+                    <div>
+                        <label for="sexo">Sexo</label>
+                        <select id="sexo">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select>
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" />
+                    </div>
+                    <br />
+                    <div>
+                        <button type="button" onclick="">Calcular</button>
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="pulsaciones">Pulsaciones</label>
+                        <input type="number" id="pulsaciones" readonly />
+                    </div>
+                </div>
+            </form>
+            <br />
+            <br />
+            <div class="footer"></div>
         </div>
 
         <div class="column side"></div>
