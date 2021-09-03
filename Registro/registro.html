@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro</title>
-    <script src="../pulsaciones.js"></script>
     <link rel="stylesheet" href="./registro.css" />
 </head>
 
 <body>
+    <script src="../pulsaciones.js"></script>
     <!--Division UL MENU-->
     <ul class="ul side"></ul>
     <ul class="ul middle" style="background-color: #5f99c2">
@@ -45,7 +45,9 @@
                         Deportistas de élite de todo el mundo confían en los monitores de
                         frecuencia cardíaca de esta pagina.
                     </p>
-                    <br />
+                    <div id = img>
+                        <img src="../Imagenes/latido-del-corazon.png" alt="heart">
+                    </div>
                     <div>
                         <label for="identificacion">Identificación</label>
                         <input type="text" id="identificacion" />
@@ -67,8 +69,8 @@
                     <div>
                         <label for="sexo">Sexo</label>
                         <select id="sexo">
-                            <option value="Masculino">Masculino</option>
-                            <option value="Femenino">Femenino</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
                         </select>
                     </div>
 
@@ -79,7 +81,7 @@
                     </div>
                     <br />
                     <div>
-                        <button type="button" onclick="">Calcular</button>
+                        <button type="button" onclick="guardar()">Calcular</button>
                     </div>
 
                     <br />

@@ -136,3 +136,9 @@ button{
   border-radius: 9px;
   width: 165px;
 }
+#img img{
+  margin-top: -50px;
+  width: 40%;
+  float:right !important;
+  padding: 50px;
+}
